@@ -2,6 +2,10 @@ import type { Report } from './types';
 
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '';
 
+function staticUrl(path: string): string {
+  return new URL(path, window.location.href).toString();
+}
+
 async function request<T>(path: string): Promise<T> {
   const controller = new AbortController();
   const timeout = window.setTimeout(() => controller.abort(), 8000);
@@ -22,14 +26,34 @@ async function request<T>(path: string): Promise<T> {
   }
 }
 
-export function fetchLatestReport(): Promise<Report> {
-  return request<Report>('/api/reports/latest');
+async function requestStatic<T>(path: string): Promise<T> {
+  const response = await fetch(staticUrl(path));
+  if (!response.ok) {
+    throw new Error(`静态报告加载失败：${response.status}`);
+  }
+  return response.json();
 }
 
-export function fetchReports(): Promise<Report[]> {
-  return request<Report[]>('/api/reports?limit=90');
+export async function fetchLatestReport(): Promise<Report> {
+  try {
+    return await request<Report>('/api/reports/latest');
+  } catch {
+    return requestStatic<Report>('reports/latest.json');
+  }
 }
 
-export function fetchReport(date: string): Promise<Report> {
-  return request<Report>(`/api/reports/${date}`);
+export async function fetchReports(): Promise<Report[]> {
+  try {
+    return await request<Report[]>('/api/reports?limit=90');
+  } catch {
+    return requestStatic<Report[]>('reports/index.json');
+  }
+}
+
+export async function fetchReport(date: string): Promise<Report> {
+  try {
+    return await request<Report>(`/api/reports/${date}`);
+  } catch {
+    return requestStatic<Report>(`reports/${date}.json`);
+  }
 }
