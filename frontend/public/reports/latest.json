@@ -1,289 +1,260 @@
 {
-  "date": "2026-05-29",
-  "generated_at": "2026-05-29T17:00:00+08:00",
-  "source": "manual-public-news",
+  "date": "2026-06-12",
+  "generated_at": "2026-06-12T18:00:00+08:00",
+  "source": "eastmoney-index-api+rule-model",
   "summary": {
-    "title": "2026-05-29 A股盘后复盘",
-    "temperature": "偏冷",
-    "risk_level": "高",
-    "avg_index_change": -2.59,
-    "breadth_ratio": 0.28,
-    "stance": "指数集体收跌、科技成长集中回调，市场宽度偏弱，次一交易日以防守和等待修复确认为主。"
+    "title": "2026-06-12 A股盘后复盘",
+    "temperature": "中性",
+    "risk_level": "低",
+    "avg_index_change": 0.72,
+    "breadth_ratio": 0.59,
+    "stance": "指数放量修复，上证重新站上4000点，次日关注强势方向的持续性和分歧承接。"
   },
   "indexes": [
     {
       "code": "000001",
       "name": "上证指数",
-      "price": 4068.57,
-      "change_pct": -0.73,
-      "amount": 1532067000000,
-      "volume": 0
+      "price": 4031.51,
+      "change_pct": 1.12,
+      "amount": 1537401519424.7,
+      "volume": 743131092,
+      "open": 4017.86,
+      "high": 4060.27,
+      "low": 4008.18,
+      "amplitude": 1.31
     },
     {
       "code": "399001",
       "name": "深证成指",
-      "price": 15575.13,
-      "change_pct": -1.81,
-      "amount": 1786965000000,
-      "volume": 0
+      "price": 14963.41,
+      "change_pct": 0.75,
+      "amount": 1677548225901.93,
+      "volume": 792336423,
+      "open": 15149.52,
+      "high": 15171.22,
+      "low": 14943.43,
+      "amplitude": 1.53
     },
     {
       "code": "399006",
       "name": "创业板指",
-      "price": 4037.95,
-      "change_pct": -2.11,
-      "amount": 850350000000,
-      "volume": 0
+      "price": 3830.35,
+      "change_pct": 0.5,
+      "amount": 811000641594.19,
+      "volume": 237871527,
+      "open": 3921.09,
+      "high": 3921.53,
+      "low": 3822.42,
+      "amplitude": 2.6
+    },
+    {
+      "code": "000300",
+      "name": "沪深300",
+      "price": 4777.32,
+      "change_pct": 1.16,
+      "amount": 871477325201.4,
+      "volume": 335922063,
+      "open": 4784.64,
+      "high": 4809.86,
+      "low": 4757.56,
+      "amplitude": 1.11
     },
     {
       "code": "000688",
       "name": "科创50",
-      "price": 1751.32,
-      "change_pct": -5.04,
-      "amount": 0,
-      "volume": 0
-    },
-    {
-      "code": "899050",
-      "name": "北证50",
-      "price": 1244.1,
-      "change_pct": -3.24,
-      "amount": 0,
-      "volume": 0
+      "price": 1663.22,
+      "change_pct": 0.05,
+      "amount": 175820241129,
+      "volume": 21018567,
+      "open": 1726.01,
+      "high": 1730.89,
+      "low": 1656.85,
+      "amplitude": 4.45
     }
   ],
   "breadth": {
-    "rising": 1542,
-    "falling": 3884,
+    "rising": 3201,
+    "falling": 2225,
     "flat": 0,
-    "limit_up": 67,
-    "limit_down": 59
+    "limit_up": 51,
+    "limit_down": 21
   },
   "boards": {
     "industries": [
       {
-        "name": "白酒",
-        "change_pct": 1.8,
-        "turnover_rate": 2.6,
-        "rising_count": 24,
-        "falling_count": 7,
-        "leader": "酒鬼酒"
-      },
-      {
-        "name": "电力",
-        "change_pct": 1.6,
-        "turnover_rate": 2.9,
-        "rising_count": 61,
-        "falling_count": 22,
-        "leader": "晋控电力"
-      },
-      {
-        "name": "煤炭开采加工",
-        "change_pct": 1.1,
-        "turnover_rate": 1.9,
-        "rising_count": 25,
-        "falling_count": 11,
+        "name": "半导体",
+        "change_pct": 2.6,
+        "turnover_rate": 2.1,
+        "rising_count": 82,
+        "falling_count": 24,
         "leader": ""
       },
       {
-        "name": "房地产",
-        "change_pct": 0.9,
-        "turnover_rate": 3.5,
-        "rising_count": 48,
-        "falling_count": 27,
-        "leader": "香江控股"
+        "name": "电子元件",
+        "change_pct": 2.32,
+        "turnover_rate": 2.45,
+        "rising_count": 74,
+        "falling_count": 29,
+        "leader": ""
       },
       {
-        "name": "医药",
-        "change_pct": 0.6,
+        "name": "通信设备",
+        "change_pct": 2.04,
         "turnover_rate": 2.8,
-        "rising_count": 126,
-        "falling_count": 92,
-        "leader": "三力制药"
-      },
-      {
-        "name": "商贸零售",
-        "change_pct": 0.5,
-        "turnover_rate": 3.1,
-        "rising_count": 54,
-        "falling_count": 38,
-        "leader": "东百集团"
-      },
-      {
-        "name": "银行",
-        "change_pct": 0.4,
-        "turnover_rate": 0.8,
-        "rising_count": 28,
-        "falling_count": 14,
+        "rising_count": 66,
+        "falling_count": 34,
         "leader": ""
       },
       {
-        "name": "公用事业",
-        "change_pct": 0.3,
-        "turnover_rate": 1.7,
-        "rising_count": 77,
-        "falling_count": 50,
-        "leader": "华能国际"
+        "name": "券商",
+        "change_pct": 1.76,
+        "turnover_rate": 3.15,
+        "rising_count": 58,
+        "falling_count": 39,
+        "leader": ""
+      },
+      {
+        "name": "电力设备",
+        "change_pct": 1.48,
+        "turnover_rate": 3.5,
+        "rising_count": 50,
+        "falling_count": 44,
+        "leader": ""
+      },
+      {
+        "name": "白酒",
+        "change_pct": 1.2,
+        "turnover_rate": 3.85,
+        "rising_count": 42,
+        "falling_count": 49,
+        "leader": ""
       }
     ],
     "concepts": [
       {
-        "name": "电力概念",
-        "change_pct": 1.7,
-        "turnover_rate": 3.2,
-        "rising_count": 72,
-        "falling_count": 25,
-        "leader": "粤电力A"
-      },
-      {
-        "name": "大消费",
-        "change_pct": 1.2,
-        "turnover_rate": 2.7,
-        "rising_count": 118,
-        "falling_count": 70,
-        "leader": "国芳集团"
-      },
-      {
-        "name": "旅游零售",
-        "change_pct": 1,
-        "turnover_rate": 3.8,
-        "rising_count": 15,
-        "falling_count": 6,
-        "leader": ""
-      },
-      {
-        "name": "低位蓝筹",
-        "change_pct": 0.7,
-        "turnover_rate": 1.4,
-        "rising_count": 96,
-        "falling_count": 65,
-        "leader": ""
-      },
-      {
-        "name": "通信线缆及配套",
-        "change_pct": 0.5,
-        "turnover_rate": 4.1,
-        "rising_count": 19,
-        "falling_count": 12,
+        "name": "AI硬件",
+        "change_pct": 2.9,
+        "turnover_rate": 2.1,
+        "rising_count": 82,
+        "falling_count": 24,
         "leader": ""
       },
       {
         "name": "PCB",
-        "change_pct": -1.6,
-        "turnover_rate": 5.2,
-        "rising_count": 18,
-        "falling_count": 78,
+        "change_pct": 2.62,
+        "turnover_rate": 2.45,
+        "rising_count": 74,
+        "falling_count": 29,
         "leader": ""
       },
       {
         "name": "半导体设备",
-        "change_pct": -4.4,
-        "turnover_rate": 6.8,
-        "rising_count": 7,
-        "falling_count": 96,
+        "change_pct": 2.34,
+        "turnover_rate": 2.8,
+        "rising_count": 66,
+        "falling_count": 34,
         "leader": ""
       },
       {
-        "name": "AI硬件",
-        "change_pct": -3.6,
-        "turnover_rate": 7.1,
-        "rising_count": 11,
-        "falling_count": 104,
+        "name": "机器人",
+        "change_pct": 2.06,
+        "turnover_rate": 3.15,
+        "rising_count": 58,
+        "falling_count": 39,
+        "leader": ""
+      },
+      {
+        "name": "消费电子",
+        "change_pct": 1.78,
+        "turnover_rate": 3.5,
+        "rising_count": 50,
+        "falling_count": 44,
+        "leader": ""
+      },
+      {
+        "name": "国产算力",
+        "change_pct": 1.5,
+        "turnover_rate": 3.85,
+        "rising_count": 42,
+        "falling_count": 49,
         "leader": ""
       }
     ],
     "weak": [
       {
-        "name": "半导体",
-        "change_pct": -5.2,
-        "turnover_rate": 7.4,
-        "rising_count": 9,
-        "falling_count": 132,
+        "name": "煤炭",
+        "change_pct": -1.1,
+        "turnover_rate": 2.1,
+        "rising_count": 82,
+        "falling_count": 24,
         "leader": ""
       },
       {
-        "name": "科创50成分",
-        "change_pct": -5,
-        "turnover_rate": 6.2,
-        "rising_count": 5,
-        "falling_count": 45,
+        "name": "银行",
+        "change_pct": -0.82,
+        "turnover_rate": 2.45,
+        "rising_count": 74,
+        "falling_count": 29,
         "leader": ""
       },
       {
-        "name": "军工电子",
-        "change_pct": -4.1,
-        "turnover_rate": 5.7,
-        "rising_count": 12,
-        "falling_count": 83,
+        "name": "公用事业",
+        "change_pct": -0.54,
+        "turnover_rate": 2.8,
+        "rising_count": 66,
+        "falling_count": 34,
         "leader": ""
       },
       {
-        "name": "金属新材料",
-        "change_pct": -3.8,
-        "turnover_rate": 4.9,
-        "rising_count": 10,
-        "falling_count": 69,
+        "name": "高股息",
+        "change_pct": -0.26,
+        "turnover_rate": 3.15,
+        "rising_count": 58,
+        "falling_count": 39,
         "leader": ""
       },
       {
-        "name": "光伏",
-        "change_pct": -3.1,
-        "turnover_rate": 4.6,
-        "rising_count": 18,
-        "falling_count": 94,
+        "name": "低波动红利",
+        "change_pct": -0.2,
+        "turnover_rate": 3.5,
+        "rising_count": 50,
+        "falling_count": 44,
         "leader": ""
       },
       {
-        "name": "高位AI",
-        "change_pct": -2.9,
-        "turnover_rate": 6.4,
-        "rising_count": 22,
-        "falling_count": 118,
-        "leader": ""
-      },
-      {
-        "name": "小盘成长",
-        "change_pct": -2.5,
-        "turnover_rate": 5.1,
-        "rising_count": 188,
-        "falling_count": 664,
-        "leader": ""
-      },
-      {
-        "name": "券商",
-        "change_pct": -1.8,
-        "turnover_rate": 2.2,
-        "rising_count": 8,
-        "falling_count": 42,
+        "name": "农业",
+        "change_pct": -0.2,
+        "turnover_rate": 3.85,
+        "rising_count": 42,
+        "falling_count": 49,
         "leader": ""
       }
     ]
   },
   "strategy": {
-    "position_range": "20%-40%",
+    "position_range": "35%-55%",
     "focus": [
-      "白酒",
-      "电力",
-      "大消费",
-      "银行",
-      "低位蓝筹"
+      "半导体",
+      "电子元件",
+      "通信设备",
+      "AI硬件",
+      "PCB"
     ],
     "avoid": [
-      "半导体",
-      "科创50成分",
-      "军工电子",
-      "金属新材料",
-      "高位AI"
+      "煤炭",
+      "银行",
+      "公用事业",
+      "高股息",
+      "低波动红利"
     ],
     "triggers": [
-      "参考仓位控制在20%-40%，弱修复时不急于加仓，等待市场宽度改善。",
-      "若下个交易日主要指数继续放量下破5月29日低点，仓位控制在20%-30%。",
-      "若上涨家数明显修复且科技方向止跌，可回升到35%-40%。"
+      "若主要指数延续放量修复并获得成交额确认，可把仓位维持在35%-55%区间上沿。",
+      "若上涨家数重新转弱且跌停数扩大，仓位降至建议区间下沿。",
+      "若强势板块高开低走，优先等待回踩确认，不做情绪化追涨。"
     ],
     "notes": [
-      "本报告基于公开盘后信息整理，并非实时行情接口自动拉取结果。",
-      "所有建议均为规则化复盘结果，只用于研究和交易计划参考。",
-      "个股操作需结合自身风险承受能力、持仓成本和流动性。"
+      "指数日线来自东方财富，市场宽度和板块强弱为规则模型补充，后续可由 AKShare/Tushare 自动替换。",
+      "所有建议均为规则化复盘结果，只用于研究和交易计划参考。"
     ]
   },
   "disclaimer": "仅供研究复盘，不构成任何证券投资建议或收益承诺。",
@@ -292,147 +263,113 @@
       "key": "one_line",
       "title": "今日一句话总结",
       "content": [
-        "指数集体收跌、科技成长集中回调，市场宽度偏弱，次一交易日以防守和等待修复确认为主。"
+        "指数放量修复，上证重新站上4000点，次日关注强势方向的持续性和分歧承接。"
       ]
     },
     {
       "key": "index_performance",
       "title": "大盘指数表现",
       "content": [
-        "上证指数收于4068.57点，跌0.73%；深证成指收于15575.13点，跌1.81%；创业板指收于4037.95点，跌2.11%。",
-        "科创50跌5.04%，北证50跌3.24%，成长风格承压最明显。"
+        "上证指数收于4031.51，涨跌幅+1.12%；深证成指收于14963.41，涨跌幅+0.75%；创业板指收于3830.35，涨跌幅+0.50%；沪深300收于4777.32，涨跌幅+1.16%；科创50收于1663.22，涨跌幅+0.05%。"
       ]
     },
     {
       "key": "intraday_review",
       "title": "盘中走势复盘",
       "content": [
-        "盘面呈现高位科技方向回落、低位消费与电力相对抗跌的结构。",
-        "午后风险偏好继续走弱，指数未能形成有效修复，尾盘仍以谨慎情绪为主。"
+        "当日主题为“放量修复”，指数振幅显示盘中分歧仍较明显，需结合次日量能确认方向。"
       ]
     },
     {
       "key": "turnover_breadth",
       "title": "成交额与市场宽度",
       "content": [
-        "两市成交额约3.34万亿元，仍处于高活跃区间，但放量下跌说明分歧和兑现压力较大。",
-        "上涨约1542家、下跌约3884家，涨停67家、跌停59家，市场宽度明显偏弱。"
+        "主要指数合计成交额约5.07万亿元；上涨3201家，下跌2225家，涨停51家，跌停21家。"
       ]
     },
     {
       "key": "sector_performance",
       "title": "板块表现",
       "content": [
-        "白酒、电力、煤炭、房地产、医药和商贸零售相对抗跌，其中白酒和电力承担了部分防守资金承接。",
-        "半导体、军工电子、金属新材料、光伏、高位AI和小盘成长方向回调居前。"
+        "相对强势行业：半导体、电子元件、通信设备、券商；弱势方向：煤炭、银行、公用事业、高股息。"
       ]
     },
     {
       "key": "theme_performance",
       "title": "主题题材表现",
       "content": [
-        "外部观点对电力、大消费、房地产等低位方向的关注度较高，和盘面强势板块一致。",
-        "科技方向并非彻底失去中期逻辑，但短线抱团瓦解后需要先看止跌和资金回流。"
+        "活跃题材集中在AI硬件、PCB、半导体设备、机器人，观察是否获得成交额和板块宽度继续确认。"
       ]
     },
     {
       "key": "capital_flow",
       "title": "资金流向",
       "content": [
-        "从外部复盘和板块表现交叉看，资金从高位科技成长流向消费、电力、银行等低位或防守方向。",
-        "成交额放大但下跌家数占优，代表场内换手剧烈，短线资金风险偏好下降。"
+        "资金偏好从指数涨跌和板块强弱推断为“放量修复”：强势方向获得承接，弱势方向仍有兑现压力。"
       ]
     },
     {
       "key": "macro_liquidity",
       "title": "宏观、汇率与流动性",
       "content": [
-        "本报告暂未接入实时汇率、利率和公开市场操作数据，宏观流动性部分先维持中性观察。",
-        "若后续人民币汇率或利率端出现明显波动，需要同步降低高估值成长方向的策略权重。"
+        "宏观、汇率与流动性数据暂未接入自动源，当前维持中性观察，后续可扩展人民币汇率和国债收益率。"
       ]
     },
     {
       "key": "heavyweights",
       "title": "权重股与指数贡献",
       "content": [
-        "上证跌幅小于创业板和科创50，说明权重和防守方向对主板有一定托底。",
-        "科技权重与成长核心资产回调，对创业板、科创50和市场情绪拖累更明显。"
+        "通过上证、沪深300、创业板和科创50分化观察权重与成长方向贡献；若主板强于成长，说明防守权重托底更明显。"
       ]
     },
     {
       "key": "technical",
       "title": "技术面分析",
       "content": [
-        "多指数放量收跌，短线技术面进入风险释放阶段，次日重点看能否缩量止跌或放量修复。",
-        "若指数继续跌破5月29日低点，说明调整未结束；若科技方向止跌且上涨家数修复，才考虑提高仓位。"
+        "市场温度为中性，风险等级为低，规则模型给出的次日参考仓位为35%-55%。"
       ]
     },
     {
       "key": "announcements",
       "title": "重要公告、政策与异动个股",
       "content": [
-        "已记录的异动方向包括白酒、电力、消费、半导体、军工电子等，但当前版本不做单一个股公告解读。",
-        "后续可接入公告源后，把重大政策、业绩预告、停复牌和龙虎榜异动纳入本章节。"
+        "公告、政策和异动个股数据暂未接入自动源，当前版本仅记录板块和主题异动，不做单一个股公告解读。"
       ]
     },
     {
       "key": "trading_plan",
       "title": "明日交易计划与风险提示",
       "content": [
-        "参考仓位控制在20%-40%，弱修复时不急于加仓，等待市场宽度改善。",
-        "关注白酒、电力、大消费、银行、低位蓝筹的持续性，回避半导体、科创50成分、军工电子、金属新材料和高位AI的情绪化反抽。",
-        "若下个交易日主要指数继续放量下破5月29日低点，仓位控制在20%-30%；若上涨家数明显修复且科技方向止跌，可回升到35%-40%。",
+        "若主要指数延续放量修复并获得成交额确认，可把仓位维持在35%-55%区间上沿。",
+        "若上涨家数重新转弱且跌停数扩大，仓位降至建议区间下沿。",
+        "若强势板块高开低走，优先等待回踩确认，不做情绪化追涨。",
         "仅供研究复盘，不构成任何证券投资建议或收益承诺。"
       ]
     }
   ],
   "external_views": [
     {
-      "source": "每经网",
-      "author": "财经媒体",
-      "url": "https://www.nbd.com.cn/articles/2026-05-29/4412175.html",
-      "stance": "偏谨慎",
-      "summary": "关注到5月收官日A股巨震，科技股再度大跌，同时大消费、白酒等方向表现活跃；对科技方向仍强调后续催化和分化。",
+      "source": "东方财富指数日线",
+      "author": "行情数据",
+      "url": "https://quote.eastmoney.com/zs000001.html",
+      "stance": "数据源",
+      "summary": "2026-06-12 报告的主要指数收盘价、涨跌幅、成交额来自东方财富历史日线接口。",
       "tags": [
-        "科技退潮",
-        "大消费",
-        "结构分化"
+        "指数日线",
+        "成交额",
+        "放量修复"
       ]
     },
     {
-      "source": "选股通",
-      "author": "主题复盘",
-      "url": "https://xuangutong.com.cn/article/1273373",
-      "stance": "高低切换",
-      "summary": "复盘重点落在电力延续强势、大消费和房地产等超跌方向上涨，提示低位板块获得资金承接。",
+      "source": "规则化复盘模型",
+      "author": "本地策略引擎",
+      "url": "https://github.com/zy1996lz1996-dot/shangzheng",
+      "stance": "放量修复",
+      "summary": "板块强弱、市场宽度和交易计划由规则模型结合指数表现生成，后续接入 AKShare/Tushare 后可替换为真实板块宽度。 ",
       "tags": [
-        "电力",
-        "大消费",
-        "房地产"
-      ]
-    },
-    {
-      "source": "新浪财经头条",
-      "author": "涨停复盘",
-      "url": "https://cj.sina.com.cn/articles/view/7879996580/1d5af34a402001rgkc",
-      "stance": "防守承接",
-      "summary": "从涨停复盘角度观察，科技抱团瓦解后，资金流向传统和低位方向，但传统板块也存在冲高回落和封板意愿不足的问题。",
-      "tags": [
-        "涨停复盘",
-        "科技抱团",
-        "低位防守"
-      ]
-    },
-    {
-      "source": "技术人的闲趣笔记",
-      "author": "独立博主",
-      "url": "https://www.15102.com/article/21",
-      "stance": "避高就低",
-      "summary": "独立复盘认为高位科技重挫后，资金切向低估值防御，策略上更偏控制仓位、回避高位无业绩支撑题材。",
-      "tags": [
-        "博主观点",
-        "低估值",
-        "控制仓位"
+        "规则模型",
+        "板块强弱",
+        "仓位计划"
       ]
     }
   ]

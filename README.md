@@ -4,7 +4,7 @@
 
 ## 功能
 
-- 每个交易日北京时间 17:00 自动生成报告
+- 每个交易日北京时间 18:00 自动生成报告
 - AKShare 优先取数，配置 `TUSHARE_TOKEN` 后作为关键指数数据兜底
 - SQLite 保存每日行情快照和报告，默认保留近 90 天
 - 首页展示最新复盘，历史页展示近 90 天报告
@@ -66,3 +66,15 @@ docker compose up -d --build
 - 后端：http://服务器IP:8000
 
 Docker 版本的前端 Nginx 会把 `/api` 代理到后端容器。生产环境建议在服务器入口再加一层 Nginx/HTTPS，并把 `ADMIN_RUN_KEY` 改成强随机字符串。
+
+## 静态报告更新
+
+没有后端服务时，前端会读取 `reports/*.json` 静态报告。可用脚本补齐指定日期区间的指数日线报告：
+
+```bash
+node scripts/generate-week-reports.cjs 20260608 20260612
+cd frontend
+npm run build
+```
+
+然后把 `frontend/dist` 同步到 `docs/`，即可更新 GitHub/CDN 静态访问版本。

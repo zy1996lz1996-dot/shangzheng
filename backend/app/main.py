@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import logging
 from contextlib import asynccontextmanager
@@ -56,13 +56,13 @@ async def lifespan(app: FastAPI):
         scheduled_job,
         "cron",
         day_of_week="mon-fri",
-        hour=17,
+        hour=18,
         minute=0,
         id="daily_report",
         replace_existing=True,
     )
     scheduler.start()
-    logger.info("daily report scheduler started: weekdays 17:00 Asia/Shanghai")
+    logger.info("daily report scheduler started: weekdays 18:00 Asia/Shanghai")
     try:
         yield
     finally:
@@ -119,4 +119,5 @@ def run_today(
     except MarketDataError as exc:
         logger.exception("manual report generation failed: %s", exc)
         raise HTTPException(status_code=502, detail=str(exc)) from exc
+
 

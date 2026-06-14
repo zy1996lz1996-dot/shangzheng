@@ -11,4 +11,5 @@ coverage/
 *.tsbuildinfo
 tools/
 exports/localtunnel*.log
+exports/index-week-*.json
 .DS_Store
